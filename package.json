@@ -7,14 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "express": "^4.17.1",
-    "html-get": "^2.4.7",
     "http.request": "^1.1.0",
-    "image-downloader": "^3.5.0",
-    "images": "^3.0.2",
     "node-image-downloader": "^1.0.7",
-    "puppeteer": "^3.0.2",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.5"
+    "request": "^2.88.2"
   }
 }
