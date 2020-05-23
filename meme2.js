@@ -1,8 +1,6 @@
 const request = require('request');
 const cheerio = require('cheerio');
 const imageDownloader = require('node-image-downloader');
-
-
 request('https://memegen.link/examples', function (err, res, html) {
   const $ = cheerio.load(html);
   $('.row a').each((i, el) => {
