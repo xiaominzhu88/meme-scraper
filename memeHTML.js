@@ -7,7 +7,7 @@ request(
   },
   (err, res, body) => {
     if (err) return console.error(err);
-    let $ = cheerio.load(body);
+    const $ = cheerio.load(body);
     console.log(body);
   },
 );

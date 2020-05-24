@@ -8,13 +8,13 @@ const dir = './memes';
 
 //make request on uri and get correct response back
 request(uri, function (error, response, body) {
-  if (!error && response.statusCode == 200) {
+  if (!error && response.statusCode === 200) {
     // use 'cheerio' to load body
-    $ = cheerio.load(body);
+    const $ = cheerio.load(body);
 
     // choose css selection to change the imgs into array so that i can filter and loop in it
     // to get the first 10 images
-    imgs = $('.meme-img').toArray();
+    const imgs = $('.meme-img').toArray();
     imgs
       .filter((item, i) => i < 10)
       .forEach(function (img, i) {
